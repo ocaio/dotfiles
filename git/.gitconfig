@@ -1,0 +1,14 @@
+[user]
+	email = caiom.elias@gmail.com
+	name = Caio Elias
+	signingkey = 57396E30578D7F8A
+[color]
+	ui = true
+[core]
+	autocrlf = input
+[merge]
+	ff = false
+[pull]
+	rebase = true
+[commit]
+	gpgsign = true
