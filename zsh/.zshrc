@@ -1,4 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
+export GPG_TTY=$(tty)
 ZSH_THEME="caio"
 
 plugins=(git z colored-man-pages fzf archlinux)
