@@ -1,8 +1,9 @@
-export ZSH="/home/celias/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="caio"
 
-plugins=(git zsh-z colored-man-pages zsh-syntax-highlighting fzf)
+plugins=(git z colored-man-pages fzf archlinux)
 source $ZSH/oh-my-zsh.sh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.envs ] && source ~/.envs
