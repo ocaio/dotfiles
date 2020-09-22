@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export GPG_TTY=$(tty)
 ZSH_THEME="caio"
 
-plugins=(git z colored-man-pages fzf archlinux)
+plugins=(git z colored-man-pages fzf archlinux colorize)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -44,3 +44,11 @@ alias dclf='docker-compose logs -f'
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export GOPATH=/home/ocaio/go
+export PATH=$PATH:/home/ocaio/.local/bin
+export PATH=$PATH:$GOPATH/bin

@@ -7,7 +7,7 @@ scrolling:
   history: 20000
 
   # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: true
+  # auto_scroll: true
 
 # Spaces per Tab (changes require restart)
 #
@@ -16,7 +16,7 @@ scrolling:
 # Some applications, like Emacs, rely on knowing about the width of a tab.
 # To prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
-tabspaces: 4
+# tabspaces: 4
 
 # Font configuration
 font:
@@ -41,7 +41,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 14.0
+  size: 12.0
 
 # color_start
 # base16-monokai.yml
