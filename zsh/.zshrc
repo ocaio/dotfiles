@@ -39,6 +39,8 @@ alias dcupd='docker-compose up -d'
 alias dcp='docker-compose pull $@'
 alias dsa='docker ps -q | xargs docker stop'
 alias dclf='docker-compose logs -f'
+alias k="kubectl"
+# alias ls="ls -latch"
 
 # tmux on startup
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
