@@ -16,7 +16,7 @@ prompt_vi_git_status() {
       STATUS_ICON="%F{green}✓%f"
     else
       #status_color="%F{005}"
-      STATUS_ICON="%F{red}⨯%f"
+      STATUS_ICON="%F{red}✕%f"
     fi
     #echo "$status_color($(git_prompt_info):$(prompt_vi_commit_time)$status_color)"
     echo "%F{blue}($(git_prompt_info))%f $STATUS_ICON"
