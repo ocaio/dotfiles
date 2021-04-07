@@ -42,6 +42,8 @@ alias dclf='docker-compose logs -f'
 alias k="kubectl"
 # alias ls="ls -latch"
 
+alias week='date +%V'
+
 # tmux on startup
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
@@ -52,6 +54,8 @@ fi
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 source /usr/share/nvm/init-nvm.sh
+
+tmux source ~/.tmux.conf
 
 export GOPATH=/home/$USER/go
 export PATH=$PATH:/home/$USER/.local/bin
