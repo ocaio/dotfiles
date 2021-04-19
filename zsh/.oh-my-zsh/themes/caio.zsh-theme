@@ -27,7 +27,7 @@ prompt_vi_git_status() {
 
 prompt_vi_show_machine_name() {
   if [ -v SSH_CLIENT ] ; then
-    echo " %F{blue}%m%f"
+    echo " %F{magenta}%m%f"
   fi
 }
 
