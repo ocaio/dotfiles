@@ -104,8 +104,7 @@ shell:
   args:
     - --login
 
-mouse:
-  url:
+hints:
     launcher:
       program: xdg-open
    #  args: []
