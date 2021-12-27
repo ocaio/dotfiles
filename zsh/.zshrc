@@ -40,10 +40,11 @@ alias dcp='docker-compose pull $@'
 alias dsa='docker ps -q | xargs docker stop'
 alias dclf='docker-compose logs -f'
 alias k="kubectl"
+alias t="task"
 # alias ls="ls -latch"
 
 alias week='date +%V'
-
+alias y="yay"
 # tmux on startup
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
