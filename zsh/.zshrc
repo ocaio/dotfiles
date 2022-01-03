@@ -32,19 +32,14 @@ grnp() {
     _gb && _gtgh "compare/$BRANCH_NAME?expand=1"
 }
 
-alias dcr='docker-compose run --rm $@'
-alias dce='docker-compose exec'
-alias dcup='docker-compose up'
-alias dcupd='docker-compose up -d'
-alias dcp='docker-compose pull $@'
-alias dsa='docker ps -q | xargs docker stop'
-alias dclf='docker-compose logs -f'
 alias k="kubectl"
 alias t="task"
-# alias ls="ls -latch"
 
-alias week='date +%V'
 alias y="yay"
+
+alias vup='openvpn3 session-start --config Hash'
+alias vdown='openvpn3 session-manage --config Hash --disconnect'
+
 # tmux on startup
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
