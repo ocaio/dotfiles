@@ -1,8 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
 export GPG_TTY=$(tty)
+
 ZSH_THEME="caio"
 
-plugins=(git z colored-man-pages fzf archlinux colorize)
+plugins=(git z colored-man-pages fzf colorize)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -32,13 +33,16 @@ grnp() {
     _gb && _gtgh "compare/$BRANCH_NAME?expand=1"
 }
 
-alias k="kubectl"
-alias t="task"
+# alias k="kubectl"
+# alias t="task"
 
-alias y="yay"
+# alias y="yay"
 
-alias vup='openvpn3 session-start --config Hash'
-alias vdown='openvpn3 session-manage --config Hash --disconnect'
+# alias vup='openvpn3 session-start --config Hash'
+# alias vdown='openvpn3 session-manage --config Hash --disconnect'
+# alias vreset='openvpn3 config-remove -c Hash && openvpn3 config-import --persistent --config ~/Downloads/hash.ovpn --name Hash'
+
+alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean && sudo snap refresh --list'
 
 # tmux on startup
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
@@ -60,3 +64,4 @@ tmux source ~/.tmux.conf
 export GOPATH=/home/$USER/go
 export PATH=$PATH:/home/$USER/.local/bin
 export PATH=$PATH:$GOPATH/bin
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
